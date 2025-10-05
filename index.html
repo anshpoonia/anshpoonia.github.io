@@ -8,18 +8,19 @@
     <title>Ansh Poonia</title>
     <style>
         body {
-          font-family: sans-serif, serif;
-          line-height: 1.4;
-          font-size: 16px;
-          margin: 50px auto;
-          max-width: 710px;
-          padding: 0 10px;
-          color: #000;
-          background: #fff;
+            font-family: sans-serif, serif;
+            line-height: 1.4;
+            font-size: 16px;
+            margin: 50px auto;
+            max-width: 710px;
+            padding: 0 10px;
+            color: #000;
+            background: #fff;
+            counter-reset: footnote reference;
         }
 
         ul {
-          margin: 0.5em 0 1em 1em;
+            margin: 0.5em 0 1em 1em;
         }
 
         p {
@@ -28,11 +29,47 @@
 
         a {
             text-decoration: none;
-            background-color: rgba(208, 208, 255, 0.15);
             color: #7777fb;
-            padding: 3px;
-            border-radius: 3px;
         }
+
+        .prof_link {
+            background-color: rgba(208, 208, 255, 0.15);
+            padding: 0.2em;
+            border-radius: 0.2em;
+        }
+
+        .fn-ref{
+            counter-increment: footnote;
+            background-color: #fff;
+            padding: 0;
+        }
+
+        .fn-ref::after {
+            content: counter(footnote);
+            vertical-align: super;
+            font-size: 0.75em;
+            background-color: rgba(208, 208, 255, 0.15);
+            padding: 0.1em;
+            border-radius: 0.1em;
+        }
+
+        .rf-ref{
+            counter-increment: reference;
+            background-color: #fff;
+            padding: 0;
+        }
+
+        .rf-ref::after {
+            content: '[' counter(reference) ']';
+            vertical-align: super;
+            font-size: 0.75em;
+            background-color: rgba(208, 208, 255, 0.15);
+            padding: 0.1em;
+            border-radius: 0.1em;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -41,12 +78,11 @@
 </p>
 
 <p>
-    <a href="/blog">Blog</a> &bull;
-    <a href="https://scholar.google.com/citations?user=1OnE7wUAAAAJ">Scholar</a> &bull;
-    <a href="https://github.com/anshpoonia">Github</a> &bull;
-    <a href="mailto:pooniaansh11@gmail.com">Email</a> &bull;
-    <a href="/cv.pdf">CV</a>
-
+    <a href="/blog" class="prof_link">Blog</a> &bull;
+    <a href="https://scholar.google.com/citations?user=1OnE7wUAAAAJ" class="prof_link">Scholar</a> &bull;
+    <a href="https://github.com/anshpoonia" class="prof_link">Github</a> &bull;
+    <a href="mailto:pooniaansh11@gmail.com" class="prof_link">Email</a> &bull;
+    <a href="/cv.pdf" class="prof_link">CV</a>
 </p>
 
 </body>
