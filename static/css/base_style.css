@@ -18,12 +18,9 @@ ul {
     margin: 0.5em 0 1em 1em;
 }
 
-ol {
-
-}
 
 p {
-    box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
 a {
