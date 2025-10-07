@@ -10,16 +10,37 @@
     <title>Ansh Poonia</title>
     <meta name="author" content="Ansh Poonia">
     <meta name="description" content="Ansh Poonia's website.">
-    <link rel="canonical" href="http://anshpoonia.github.io/">
+    <link rel="canonical" href="https://anshpoonia.github.io/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../static/css/base_style.css">
     <style>
+        .blog_card{
+            padding: 16px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
 
+        .blog_card .title{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .blog_card .dash{
+            height: 0.2rem;
+            background-color: #6a6a6a;
+            width: 3rem;
+            margin: 0.5rem;
+            border-radius: 0.1rem;
+        }
+
+        .blog_link{
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -27,12 +48,25 @@
 <h2><a href="../" class="prof_link">Ansh Poonia</a> / Blog</h2>
 </p>
 
+<!--Blog intro-->
 <p>
     <strong>Why</strong> This blog is for sharing my ongoing experiments and observations - mostly around mechanistic
     interpretability and alignment in language models. I am starting it to make my work more accessible and tangible,
     beyond code or internal notes (which are often in rough shape). I also hope that writing here helps me stay
     accountable, focus on clarity, and continually improve how I communicate research.
 </p>
+
+<h3>Blogs</h3>
+
+<!--Blog cards-->
+<a href="./review_system" class="blog_link">
+    <div class="blog_card">
+        <div class="title">Review System</div>
+        <div class="dash"></div>
+        <div class="description">Thoughts on feedback and a review system for future blogs.</div>
+    </div>
+</a>
+
 
 
 </body>
