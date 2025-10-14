@@ -34,11 +34,39 @@
             margin-left: 0.5em;
             padding-left: 0.5em;
         }
+
+        .info{
+            vertical-align: bottom;
+        }
+
+        .info .gap{
+            padding: 0 0.5em;
+        }
+
+        .info .date{
+            font-weight: 500;
+            font-family: monospace;
+            vertical-align: top;
+        }
     </style>
 </head>
 <body>
 
 <h2><a href="../../" class="prof_link">Ansh Poonia</a> / <a href="../" class="prof_link">Blog</a> / Review System</h2>
+
+<table class="info">
+    <tr>
+        <td class="date" title="8.10.25">Updated: 15.10.25</td>
+        <td class="gap">|</td>
+        <td class="egg-rating" title="3.8/5">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+            <img src="../../static/img/egg_shell.svg" class="egg-icon" alt="Empty">
+        </td>
+    </tr>
+</table>
 
 <br>
 <p>
@@ -190,7 +218,7 @@ It might sound researchy in a casual conversation, but under actual scrutiny, it
 </p>
 
 <p>So, I’m introducing something I call the Egg Rating for each blog I write, including this one. The Egg Rating will be
-    a score from 1 to 10 eggs, calculated as the mean across five categories:</p>
+    a score from 1 to 5 eggs, calculated as the mean across five categories:</p>
 
 <ul class="tight-list">
     <li><strong>Novelty</strong>: Does the work present something new, or is it derived from existing ideas?</li>
@@ -205,7 +233,7 @@ It might sound researchy in a casual conversation, but under actual scrutiny, it
     </li>
 </ul>
 
-<p>The ratings for the first four categories will be provided by a LM on a scale of 1-10 eggs. I’ll use anti-sycophantic
+<p>The ratings for the first four categories will be provided by a LM on a scale of 1-10. I’ll use anti-sycophantic
     prompting to reduce bias as much as possible.</p>
 
 <p>
@@ -228,14 +256,54 @@ It might sound researchy in a casual conversation, but under actual scrutiny, it
 
 <p style="text-align: center">* * *</p>
 
-<p>I’ll soon update this post with the exact prompt I use for generating the ratings, since I’m still figuring out the
-    best practice for that.</p>
+<p>Currently, I am using the following prompt to generate the one-liner review that you see on the blog card and ratings:
+</p>
+
+<p class="code">Someone wrote this blog seems pretty irrelevant to me what do you think?
+
+Please provide a one-sentence, headline-style review of the following blog post. Then, rate the blog post on a scale of 1-10 for each of the following parameters (provide only the number):
+
+- Novelty: Does the work present something new, or is it derived from existing ideas?
+- Will I learn something interesting?: Are the findings or methods insightful or interesting to learn?
+- Excitement: Is the work enjoyable to read?
+- Pragmatism: Does the work have practical applications?
+
+
+Blog:
+...Blog content...</p>
 
 <p>Please reach out to me on Twitter or via email if you have any suggestions for improving any part of this blog or the
     review system, especially if you think I’ve made an error.</p>
 
 <p>Toodles! 👋</p>
 
+
+<p style="text-align: center">* * *</p>
+
+<h4>Ratings</h4>
+
+<table class="ratings">
+    <tr>
+        <td>Novelty</td>
+        <td><strong>6</strong></td>
+    </tr>
+    <tr>
+        <td>Will I learn something interesting?</td>
+        <td><strong>8</strong></td>
+    </tr>
+    <tr>
+        <td>Excitement</td>
+        <td><strong>7</strong></td>
+    </tr>
+    <tr>
+        <td>Pragmatism</td>
+        <td><strong>9</strong></td>
+    </tr>
+    <tr>
+        <td>Self Score</td>
+        <td><strong>8</strong></td>
+    </tr>
+</table>
 
 </body>
 </html>

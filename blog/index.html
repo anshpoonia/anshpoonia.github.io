@@ -37,6 +37,25 @@
             border-radius: 0.1rem;
         }
 
+        .blog_card .details{
+            vertical-align: bottom;
+        }
+
+        .blog_card .details .date{
+            /*font-style: italic;*/
+            font-weight: 500;
+            font-family: monospace;
+            vertical-align: top;
+        }
+
+        .blog_card .description{
+            margin-top: 0.5em;
+        }
+
+        .blog_card .review{
+            padding: 1em 1.5em;
+        }
+
         .blog_link{
             text-decoration: none;
             color: black;
@@ -63,7 +82,21 @@
     <div class="blog_card">
         <div class="title">Review System</div>
         <div class="dash"></div>
+        <table class="details">
+            <tr>
+                <td class="date" title="8.10.25">15.10.25</td>
+                <td>|</td>
+                <td class="egg-rating" title="3.8/5">
+                    <img src="../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+                    <img src="../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+                    <img src="../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+                    <img src="../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
+                    <img src="../static/img/egg_shell.svg" class="egg-icon" alt="Empty">
+                </td>
+            </tr>
+        </table>
         <div class="description">Thoughts on feedback and a review system for future blogs.</div>
+        <div class="review">"A meta-analysis on the value of critical feedback culminates in the proposal of an 'Egg Rating' system driven by anti-sycophantic LLM prompts." <strong>~Gemini</strong></div>
     </div>
 </a>
 
