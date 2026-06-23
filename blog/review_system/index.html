@@ -2,68 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Review System</title>
-    <title>Ansh Poonia</title>
+    <title>Review System &middot; Ansh Poonia</title>
     <meta name="author" content="Ansh Poonia">
-    <meta name="description" content="Ansh Poonia's website.">
-    <link rel="canonical" href="https://anshpoonia.github.io/">
+    <meta name="description" content="Thoughts on feedback and an LLM-driven review system (the Egg Rating) for future blog posts.">
+    <link rel="canonical" href="https://anshpoonia.github.io/blog/review_system/">
+    <link rel="icon" href="../../static/img/egg_filled.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..600&family=JetBrains+Mono:wght@200..600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 
     <link rel="stylesheet" href="../../static/css/base_style.css">
-    <style>
-        .code {
-            background-color: #f7f7f7;
-            padding: 12px 16px;
-            border-radius: 8px;
-            font-family: "JetBrains Mono", monospace;
-            font-size: 0.9rem;
-            white-space: pre-wrap;
-            font-weight: 200;
-            margin: 1em 0;
-        }
-
-        ul.tight-list {
-            margin-left: 0.5em;
-            padding-left: 0.5em;
-        }
-
-        .info{
-            vertical-align: bottom;
-        }
-
-        .info .gap{
-            padding: 0 0.5em;
-        }
-
-        .info .date{
-            font-weight: 500;
-            font-family: monospace;
-            vertical-align: top;
-        }
-    </style>
 </head>
 <body>
 
-<h2><a href="../../" class="prof_link">Ansh Poonia</a> / <a href="../" class="prof_link">Blog</a> / Review System</h2>
+<h1><a href="../../" class="prof_link">Ansh Poonia</a> / <a href="../" class="prof_link">Blog</a> / Review System</h1>
 
 <table class="info">
     <tr>
         <td class="date" title="8.10.25">Updated: 15.10.25</td>
         <td class="gap">|</td>
-        <td class="egg-rating" title="3.8/5">
-            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
-            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
-            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
-            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="Filled">
-            <img src="../../static/img/egg_shell.svg" class="egg-icon" alt="Empty">
+        <td class="egg-rating" role="img" aria-label="Egg rating: 3.8 out of 5" title="3.8/5">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="">
+            <img src="../../static/img/egg_filled.svg" class="egg-icon" alt="">
+            <img src="../../static/img/egg_shell.svg" class="egg-icon" alt="">
         </td>
     </tr>
 </table>
@@ -77,7 +45,6 @@
     difficult, especially if you’re exploring a new field independently.
 </p>
 
-<br>
 <h3>Hmmm!</h3>
 <p>
     One often has a decent idea of the gaps and potential improvements in their own work, unless they are delusional or
@@ -95,7 +62,6 @@
     as if you’re stepping back and viewing it from afar.
 </p>
 
-<br>
 <h3>Just ask someone</h3>
 <p>
     Another, albeit trivial, way to get feedback is simply to ask someone to review it, obviously! If you're trying a
@@ -112,7 +78,6 @@
     for guidance myself.
 </p>
 
-<br>
 <h3>Interesting Stuff</h3>
 <p>
     Language models (LMs) can provide quick and more accessible feedback, but they come with their own set of downsides.
@@ -205,7 +170,6 @@ It might sound researchy in a casual conversation, but under actual scrutiny, it
     this in combination with a good amount of self-reflection, as LM can make mistake, and so can you.
 </p>
 
-<br>
 <h3>Why???</h3>
 
 <p>
@@ -304,6 +268,12 @@ Blog:
         <td><strong>8</strong></td>
     </tr>
 </table>
+
+<footer class="site-footer">
+    <a href="../" class="prof_link">&larr; Back to blog</a>
+</footer>
+
+<script src="../../static/js/cat.js" defer></script>
 
 </body>
 </html>

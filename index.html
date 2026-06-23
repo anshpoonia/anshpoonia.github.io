@@ -2,69 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Ansh Poonia</title>
     <meta name="author" content="Ansh Poonia">
-    <meta name="description" content="Ansh Poonia's website.">
+    <meta name="description" content="Ansh Poonia — independent researcher studying persona-driven behavior in language models, and Data Scientist at Kantar.">
     <link rel="canonical" href="https://anshpoonia.github.io/">
+    <link rel="icon" href="./static/img/egg_filled.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="/static/css/base_style.css">
-    <style>
-        .profile_picture {
-            float: right;
-            width: 10rem;
-            height: 10rem;
-            object-fit: cover;
-            border-radius: 1rem;
-            margin: 0 0 20px 30px;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 0.05);
-            clear: right;
-        }
-
-        .fn-ref {
-            counter-increment: footnote;
-            background-color: #fff;
-            padding: 0;
-        }
-
-        .fn-ref::after {
-            content: counter(footnote);
-            vertical-align: super;
-            font-size: 0.75em;
-            background-color: rgba(208, 208, 255, 0.15);
-            padding: 0.1em;
-            border-radius: 0.1em;
-        }
-
-        .rf-ref {
-            counter-increment: reference;
-            background-color: #fff;
-            padding: 0;
-        }
-
-        .rf-ref::after {
-            content: '[' counter(reference) ']';
-            vertical-align: super;
-            font-size: 0.75em;
-            background-color: rgba(208, 208, 255, 0.15);
-            padding: 0.1em;
-            border-radius: 0.1em;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./static/css/base_style.css">
 </head>
 <body>
 
-<h2>Ansh Poonia</h2>
+<h1 class="with-rule">Ansh Poonia</h1>
 
 <!--Personal Links-->
 <p>
@@ -76,7 +32,7 @@
 </p>
 
 <!--Profile Picture-->
-<img src="./static/img/profile_pic.jpeg" alt="Ansh Poonia" class="profile_picture">
+<img src="./static/img/profile_pic.jpeg" alt="Portrait of Ansh Poonia" class="profile_picture">
 
 <!--Intro bio-->
 <p>
@@ -98,6 +54,12 @@
     <li><a href="./blog">Blog</a> Initialized!!!</li>
 </ul>
 
+<footer class="site-footer">
+    Made with curiosity and too much coffee
+    <img src="./static/img/egg_filled.svg" class="egg-icon" alt=""> &mdash; keep an eye out for the cat.
+</footer>
+
+<script src="./static/js/cat.js" defer></script>
 
 </body>
 </html>
