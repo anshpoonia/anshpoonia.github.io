@@ -5,24 +5,25 @@ CSS file, served as-is by GitHub Pages. To publish, just commit and push to
 `main`.
 
 The look is **warm & playful, light theme only**: cream paper, egg-yolk yellow,
-clay/rust links, with an egg motif running through it. Keep it simple and
-readable.
+clay/rust links. Snoopy is the favicon and brand mark on every page; the egg is
+now reserved for the Egg Rating on blog posts. Keep it simple and readable.
 
 ---
 
 ## Project structure
 
 ```
-index.html                      Home (name, links, bio, updates, egg-sun hero)
+index.html                      Home (name, links, bio, updates, portrait hero)
 blog/
   index.html                    Blog landing — one card per post
   review_system/
     index.html                  A blog post (folder name = its URL slug)
 static/
   css/style.css                 The entire stylesheet (all pages share it)
-  img/egg_filled.svg            Yolk egg  — favicon, ratings, decorations
+  img/snoopy_head.svg           Snoopy head — favicon + brand mark, all pages
+  img/egg_filled.svg            Yolk egg  — ratings
   img/egg_shell.svg             Empty egg — the "unfilled" half of a rating
-  img/profile_pic.jpeg
+  img/profile_pic.jpeg          Portrait — the home page hero
   files/cv.pdf
 GUIDE.md                        This file
 ```
@@ -81,7 +82,7 @@ use `.code` / `.date`.
     <title>Notes &middot; Ansh Poonia</title>
     <meta name="description" content="Short description for search engines and social cards.">
     <link rel="canonical" href="https://anshpoonia.github.io/notes/">
-    <link rel="icon" href="../static/img/egg_filled.svg" type="image/svg+xml">
+    <link rel="icon" href="../static/img/snoopy_head.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,7 +95,7 @@ use `.code` / `.date`.
 <header class="site-head">
     <div class="site-head__inner">
         <a href="../" class="brand" aria-label="Ansh Poonia — home">
-            <img src="../static/img/egg_filled.svg" alt="" class="brand__egg">
+            <img src="../static/img/snoopy_head.svg" alt="" class="brand__mark">
             <span>Ansh Poonia</span>
         </a>
         <nav class="nav" aria-label="Primary">
@@ -140,7 +141,7 @@ blog index). Fill in the title, description, date, egg rating, and verdict.
     <title>POST TITLE &middot; Ansh Poonia</title>
     <meta name="description" content="One-sentence summary of the post.">
     <link rel="canonical" href="https://anshpoonia.github.io/blog/SLUG/">
-    <link rel="icon" href="../../static/img/egg_filled.svg" type="image/svg+xml">
+    <link rel="icon" href="../../static/img/snoopy_head.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,7 +154,7 @@ blog index). Fill in the title, description, date, egg rating, and verdict.
 <header class="site-head">
     <div class="site-head__inner">
         <a href="../../" class="brand" aria-label="Ansh Poonia — home">
-            <img src="../../static/img/egg_filled.svg" alt="" class="brand__egg">
+            <img src="../../static/img/snoopy_head.svg" alt="" class="brand__mark">
             <span>Ansh Poonia</span>
         </a>
         <nav class="nav" aria-label="Primary">
